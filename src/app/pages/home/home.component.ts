@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PromocaoService } from 'src/app/core/servicos/promocao.service';
+import { PromocaoService } from 'src/app/core/services/promocao.service';
 
 @Component({
   selector: 'app-home',
