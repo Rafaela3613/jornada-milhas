@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "jornada-milhas:build:production"
+              "browserTarget": "jornada-milhas:build:production"
             },
             "development": {
-              "buildTarget": "jornada-milhas:build:development"
+              "browserTarget": "jornada-milhas:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "jornada-milhas:build"
+            "browserTarget": "jornada-milhas:build"
           }
         },
         "test": {

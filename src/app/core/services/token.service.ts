@@ -22,4 +22,3 @@ export class TokenService {
     return !!this.retornarToken();
   }
 }
-
