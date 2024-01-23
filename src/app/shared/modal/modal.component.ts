@@ -8,6 +8,6 @@ import { FormBuscaService } from 'src/app/core/services/form-busca.service';
 })
 export class ModalComponent {
   constructor (public formBuscaService: FormBuscaService) {
-
+    
   }
 }

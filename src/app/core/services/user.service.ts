@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { TokenService } from './token.service';
-import  jwt_decode from 'jwt-decode';
+import jwt_decode from 'jwt-decode';
 import { BehaviorSubject } from 'rxjs';
 import { PessoaUsuaria } from '../types/type';
 
@@ -41,5 +41,6 @@ export class UserService {
     return this.tokenService.possuiToken();
   }
 }
+
 
 

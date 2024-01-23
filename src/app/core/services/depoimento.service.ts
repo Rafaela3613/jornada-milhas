@@ -13,7 +13,7 @@ export class DepoimentoService {
 
   constructor(
     private http: HttpClient
-  ) {
+  ) { 
   }
 
   listar() : Observable<Depoimento[]>{
