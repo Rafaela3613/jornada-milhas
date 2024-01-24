@@ -10,8 +10,9 @@ import { ModalComponent } from 'src/app/shared/modal/modal.component';
 export class FormBuscaService {
 
   formBusca: FormGroup;
+  value: any;
 
-  constructor(private dialog: MatDialog) { 
+  constructor(private dialog: MatDialog) {
 
     this.formBusca = new FormGroup({
       somenteIda: new FormControl(false),
@@ -31,24 +32,24 @@ export class FormBuscaService {
     if (adultos && adultos > 0) {
       descricao += `${adultos} adulto${adultos > 1 ? 's' : ''}`;
     }
-  
+
     const criancas = this.formBusca.get('criancas')?.value;
     if (criancas && criancas > 0) {
       descricao += `${descricao ? ', ' : ''}${criancas} criança${criancas > 1 ? 's' : ''}`;
     }
-  
+
     const bebes = this.formBusca.get('bebes')?.value;
     if (bebes && bebes > 0) {
       descricao += `${descricao ? ', ' : ''}${bebes} bebê${bebes > 1 ? 's' : ''}`;
     }
-  
+
     return descricao
   }
 
   trocarOrigemDestino(): void {
     const origem = this.formBusca.get('origem')?.value;
     const destino = this.formBusca.get('destino')?.value;
-  
+
     this.formBusca.patchValue({
       origem: destino,
       destino: origem
