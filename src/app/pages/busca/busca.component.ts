@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PassagensService } from '../../core/services/passagens.service';
+import { Passagem } from 'src/app/core/types/type';
 
 @Component({
   selector: 'app-busca',
@@ -7,7 +8,7 @@ import { PassagensService } from '../../core/services/passagens.service';
   styleUrls: ['./busca.component.scss']
 })
 export class BuscaComponent implements OnInit {
-  [x: string]: any;
+    passagens : Passagem[] = []
   constructor(private passagensService: PassagensService) {}
   ngOnInit(): void {
     const buscaPadrao = {
@@ -19,7 +20,11 @@ export class BuscaComponent implements OnInit {
       tipo: "Executiva"
     }
 
-    this.passagensService.getPassagens(buscaPadrao).subscribe((res: any) => console.log(res)
+    this.passagensService.getPassagens(buscaPadrao).subscribe(
+      res => {
+        console.log(res)
+        this.passagens = res.resultado
+      }
     )
   }
 
