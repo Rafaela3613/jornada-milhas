@@ -9,9 +9,9 @@ import { PromocaoService } from 'src/app/core/services/promocao.service';
 })
 export class HomeComponent implements OnInit {
   constructor(
-    private servicoPromocao: PromocaoService ,
+    private servicoPromocao: PromocaoService,
     private router: Router
-    ) {
+  ) {
 
   }
   ngOnInit(): void {
@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
         }
       )
   }
-  navegarParaBusca(ev: any){
+  navegarParaBusca(ev: any) {
     this.router.navigate(['busca']);
   }
 }
