@@ -1,44 +1,43 @@
 export interface Promocao {
-    id: number
-    destino: string
-    imagem: string
-    preco: number
+  id: number
+  destino: string
+  imagem: string
+  preco: number
 }
 
 export interface UnidadeFederativa {
-    id: number;
-    nome: string;
-    sigla: string;
+  id: number;
+  nome: string;
+  sigla: string;
 }
 
 export interface Depoimento {
-    id: number;
-    texto: string;
-    autor: string;
-    avatar: string;
+  id: number;
+  texto: string;
+  autor: string;
+  avatar: string;
 }
 
 export interface PessoaUsuaria {
-  nome: string;
-  nascimento: string;
-  cpf: string;
-  telefone: string;
-  email: string;
-  senha: string;
-  cidade: string;
-  estado: UnidadeFederativa;
-  genero: string;
+nome: string;
+nascimento: string;
+cpf: string;
+telefone: string;
+email: string;
+senha: string;
+cidade: string;
+estado: UnidadeFederativa;
+genero: string;
 }
 
 export interface Resultado {
-  paginaAtual : number ;
-  ultimaPagina : number ;
-  total : number ;
-  precoMin: number ;
-  precoMax : number ;
-  resultado : Passagem[] ;
+  paginaAtual: number;
+  ultimaPagina: number;
+  total: number;
+  precoMin: number;
+  precoMax: number;
+  resultado: Passagem[];
 }
-
 
 export interface Passagem{
   tipo: string;
@@ -66,4 +65,23 @@ export interface Orcamento{
   preco: number;
   taxaEmbarque: number;
   total: number
+}
+
+export interface DadosBusca{
+  somenteIda?: boolean;
+  passageirosAdultos?: number;
+  passageirosCriancas?: number;
+  passageirosBebes?: number;
+  tipo?: string;
+  origemId?: number;
+  destinoId?: number;
+  precoMin?: number;
+  precoMax?: number;
+  conexoes?: number;
+  tempoVoo?: number;
+  dataIda: string;
+  dataVolta?: string;
+  companhiasId?: number[];
+  pagina: number;
+  porPagina: number;
 }
