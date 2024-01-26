@@ -51,6 +51,8 @@ import { PrecosComponent } from './shared/form-busca/filtros-complementares/prec
 import { LabelComponent } from './shared/form-busca/filtros-complementares/label/label.component';
 import { FiltrosComplementaresComponent } from './shared/form-busca/filtros-complementares/filtros-complementares.component';
 import { PassagemDestaqueComponent } from './shared/passagem-destaque/passagem-destaque.component';
+import { SharedModule } from './shared/shared.module';
+import { MaterialModule } from './core/material/material.module';
 
 @NgModule({
   declarations: [
@@ -67,25 +69,11 @@ import { PassagemDestaqueComponent } from './shared/passagem-destaque/passagem-d
 imports: [
     BrowserModule,
     AppRoutingModule,
+    SharedModule,
+    MaterialModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatCardModule,
-    MatButtonToggleModule,
-    MatIconModule,
-    MatChipsModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatDialogModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MatAutocompleteModule,
-    MatRadioModule,
-    MatDividerModule,
-    MatCheckboxModule,
-    MatSliderModule
   ],
 
   providers: [{
