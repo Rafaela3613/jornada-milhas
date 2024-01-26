@@ -19,6 +19,7 @@ import { ModalComponent } from "./modal/modal.component";
 import { PassagemDestaqueComponent } from "./passagem-destaque/passagem-destaque.component";
 import { PassagemComponent } from "./passagem/passagem.component";
 import { SeletorPassageiroComponent } from "./seletor-passageiro/seletor-passageiro.component";
+import { CommonModule } from "@angular/common";
 
 @NgModule({
   declarations:[
@@ -44,7 +45,29 @@ import { SeletorPassageiroComponent } from "./seletor-passageiro/seletor-passage
     PassagemDestaqueComponent
   ],
   imports: [
-
+    CommonModule
+  ],
+  exports: [
+    HeaderComponent,
+    BannerComponent,
+    CardComponent,
+    ContainerComponent,
+    FooterComponent,
+    CardBuscaComponent,
+    CardDepoimentoComponent,
+    FormBuscaComponent,
+    ModalComponent,
+    BotaoControleComponent,
+    DropdownUfComponent,
+    SeletorPassageiroComponent,
+    FormBaseComponent,
+    PassagemComponent,
+    ParadasComponent,
+    CompanhiasComponent,
+    PrecosComponent,
+    LabelComponent,
+    FiltrosComplementaresComponent,
+    PassagemDestaqueComponent
   ]
 
 })
