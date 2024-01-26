@@ -55,35 +55,16 @@ import { PassagemDestaqueComponent } from './shared/passagem-destaque/passagem-d
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    BannerComponent,
-    CardComponent,
-    ContainerComponent,
     HomeComponent,
-    FooterComponent,
-    CardBuscaComponent,
-    CardDepoimentoComponent,
-    FormBuscaComponent,
-    ModalComponent,
-    BotaoControleComponent,
     PromocoesComponent,
-    DropdownUfComponent,
-    SeletorPassageiroComponent,
     DepoimentosComponent,
     LoginComponent,
-    FormBaseComponent,
     CadastroComponent,
     PerfilComponent,
     BuscaComponent,
-    PassagemComponent,
-    ParadasComponent,
-    CompanhiasComponent,
-    PrecosComponent,
-    LabelComponent,
-    FiltrosComplementaresComponent,
-    PassagemDestaqueComponent
   ],
-  imports: [
+
+imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -106,6 +87,7 @@ import { PassagemDestaqueComponent } from './shared/passagem-destaque/passagem-d
     MatCheckboxModule,
     MatSliderModule
   ],
+
   providers: [{
     provide: HTTP_INTERCEPTORS,
     useClass: AutenticacaoInterceptor,
