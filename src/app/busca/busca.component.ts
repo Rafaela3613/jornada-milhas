@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { take } from 'rxjs';
 import { FormBuscaService } from 'src/app/core/services/form-busca.service';
-import { PassagensService } from 'src/app/core/services/passagens.service';
-import { DadosBusca, Destaques, Passagem, Resultado } from '../../core/types/type';
+import { PassagensService } from 'src/app/busca/services/passagens.service';
+import { DadosBusca, Destaques, Passagem, Resultado } from '../core/types/type';
 
 @Component({
   selector: 'app-busca',
