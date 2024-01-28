@@ -10,7 +10,8 @@ import { BuscaComponent } from './busca/busca.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    redirectTo: '/home',
+    pathMatch: 'full'
   },
   {
     path: 'login',
