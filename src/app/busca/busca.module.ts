@@ -14,7 +14,6 @@ import { PassagemComponent } from "./passagem/passagem.component";
 import { BuscaComponent } from "./busca.component";
 import { BuscaRoutingModule } from "./busca-routing.module";
 
-
 @NgModule({
   declarations: [
     BuscaComponent,

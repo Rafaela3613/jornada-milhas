@@ -6,7 +6,6 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao
 import { RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
 
-
 @NgModule({
   declarations: [
     PaginaNaoEncontradaComponent
@@ -16,6 +15,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
     ErroRoutingModule,
     SharedModule,
     RouterModule
+  ],
+  exports: [
+    PaginaNaoEncontradaComponent
   ]
 })
 export class ErroModule { }
