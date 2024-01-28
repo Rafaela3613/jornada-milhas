@@ -12,6 +12,7 @@ import { FiltrosComplementaresComponent } from "./filtros-complementares/filtros
 import { PassagemDestaqueComponent } from "./passagem-destaque/passagem-destaque.component";
 import { PassagemComponent } from "./passagem/passagem.component";
 import { BuscaComponent } from "./busca.component";
+import { BuscaRoutingModule } from "./busca-routing.module";
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { BuscaComponent } from "./busca.component";
     MaterialModule,
     SharedModule,
     ReactiveFormsModule,
+    BuscaRoutingModule
   ],
   exports: [
     BuscaComponent,
