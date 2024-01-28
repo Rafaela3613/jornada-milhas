@@ -13,6 +13,7 @@ import { PassagemDestaqueComponent } from "./passagem-destaque/passagem-destaque
 import { PassagemComponent } from "./passagem/passagem.component";
 import { BuscaComponent } from "./busca.component";
 
+
 @NgModule({
   declarations: [
     BuscaComponent,
