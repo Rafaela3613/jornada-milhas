@@ -5,6 +5,8 @@ import { LoginComponent } from './login/login.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { SharedModule } from '../shared/shared.module';
 import { MaterialModule } from '../core/material/material.module';
+import { AutenticacaoRoutingModule } from './autenticacao-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -13,10 +15,12 @@ import { MaterialModule } from '../core/material/material.module';
         PerfilComponent
     ],
     imports: [
-        CommonModule,
-        SharedModule,
-        MaterialModule
-    ],
+      CommonModule,
+      SharedModule,
+      MaterialModule,
+      ReactiveFormsModule,
+      AutenticacaoRoutingModule
+  ],
 
   exports: [
         CadastroComponent,

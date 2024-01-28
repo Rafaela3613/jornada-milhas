@@ -14,19 +14,6 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'login',
-    component: LoginComponent
-  },
-  {
-    path: 'cadastro',
-    component: CadastroComponent
-  },
-  {
-    path: 'perfil',
-    component: PerfilComponent,
-    canActivate: [authGuard]
-  },
-  {
     path: 'busca',
     component: BuscaComponent
   }
