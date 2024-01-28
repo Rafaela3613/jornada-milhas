@@ -5,6 +5,7 @@ import { SharedModule } from "src/app/shared/shared.module";
 import { DepoimentosComponent } from "./depoimentos/depoimentos.component";
 import { HomeComponent } from "./home.component";
 import { PromocoesComponent } from "./promocoes/promocoes.component";
+import { HomeRoutingModule } from "./home-routing.module";
 
 @NgModule({
     declarations: [
@@ -13,10 +14,12 @@ import { PromocoesComponent } from "./promocoes/promocoes.component";
         HomeComponent
     ],
     imports: [
-        CommonModule,
-        MaterialModule,
-        SharedModule,
-    ],
+      CommonModule,
+      MaterialModule,
+      SharedModule,
+      HomeRoutingModule
+  ],
+
     exports:[
     PromocoesComponent,
     DepoimentosComponent,
